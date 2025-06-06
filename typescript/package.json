@@ -1,0 +1,33 @@
+{
+  "name": "q-developer-wrapper",
+  "version": "1.0.0",
+  "description": "Simple TypeScript wrapper for Amazon Q Developer CLI request-response mode",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node test.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "amazon-q",
+    "q-developer",
+    "cli",
+    "wrapper",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "files": [
+    "dist",
+    "examples"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
