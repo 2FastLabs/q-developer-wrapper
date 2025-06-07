@@ -54,3 +54,6 @@ coverage/
 
 # python
 *.pyc
+__pycache__
+.venv
+**.egg**
