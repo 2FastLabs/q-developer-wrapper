@@ -1,8 +1,5 @@
 import asyncio
-import sys
-sys.path.insert(0, '../')  # Add parent directory to path for imports
-
-from src import QDeveloperWrapper, QRequest
+from q_developer_wrapper import QDeveloperWrapper, QRequest
 
 
 async def main():
