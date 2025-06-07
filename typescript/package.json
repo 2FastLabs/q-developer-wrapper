@@ -1,6 +1,6 @@
 {
   "name": "q-developer-wrapper",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Simple TypeScript wrapper for Amazon Q Developer CLI request-response mode",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
