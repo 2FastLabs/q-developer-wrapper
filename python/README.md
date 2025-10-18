@@ -131,3 +131,8 @@ The Python implementation offers the same functionality as the TypeScript versio
 2. Uses Python dataclasses instead of TypeScript interfaces
 3. The Python version handles subprocess management using `asyncio.create_subprocess_exec`
 4. Error handling and timeout mechanisms are adapted to Python's async patterns
+
+## Authors
+
+- [Corneliu Croitoru](https://www.linkedin.com/in/corneliucroitoru/)
+- [Anthony Bernabeu](https://www.linkedin.com/in/anthonybernabeu/)

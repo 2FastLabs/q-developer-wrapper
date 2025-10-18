@@ -1,27 +1,8 @@
-# Q Developer Wrapper
+# Q Developer Wrapper for TypeScript/JavaScript
 
-A lightweight SDK wrapper library for Amazon Q Developer CLI that enables seamless integration of AI capabilities into your applications, scripts, and automation workflows.
-
-This library allows developers to programmatically interact with Amazon Q Developer, making it easy to build AI-powered features, automate code generation, create intelligent assistants, and enhance developer productivity tools - all while leveraging Amazon Q's advanced capabilities.
-
-## 🔖 Features
-
-- 🔄 **Simple API** — Clean, promise-based interface for interacting with Amazon Q Developer CLI
-- 🌊 **Streaming Output** — Real-time streaming of responses as they're generated
-- 🔤 **Dual language support** — Fully implemented in TypeScript and Python
-- 🧩 **Flexible Integration** — Easy to integrate into any Node.js application or script
-- 🛠️ **Interactive CLI** — Ready-to-use interactive command-line interface included
-- 🌐 **Cross-platform** — Works on any platform where Amazon Q Developer CLI is available
-
-## Prerequisites
-
-1. **Install Amazon Q Developer CLI** from [AWS Q Developer](https://aws.amazon.com/q/developer/)
-2. **Authenticate**: Run `q login` 
-3. **Verify**: Run `q chat --no-interactive "hello"`
+A TypeScript/JavaScript wrapper for interacting with the Q Developer CLI.
 
 ## Installation
-
-### TypeScript/JavaScript
 
 ```bash
 npm install q-developer-wrapper
@@ -32,13 +13,9 @@ For TypeScript development, also install:
 npm install -D typescript @types/node ts-node
 ```
 
-### Python
+## Usage
 
-```bash
-pip install q-developer-wrapper
-```
-
-## Basic Usage
+### Basic Examples
 
 ```typescript
 import QDeveloperWrapper from 'q-developer-wrapper';
@@ -67,34 +44,20 @@ if (response.success) {
 }
 ```
 
-## Interactive Chat
+### Interactive Chat Example
 
-For a complete interactive chat session, see the example file:
+See the complete interactive chat example at [`examples/chat.ts`](examples/chat.ts).
 
-```typescript
-// Basic usage
-const q = new QDeveloperWrapper();
-const answer = await q.chat('What are TypeScript best practices?');
-console.log(answer);
-```
-
-**📁 Complete interactive chat examples:**
-- TypeScript: [`typescript/examples/chat.ts`](typescript/examples/chat.ts)  
-- JavaScript: Coming soon
-
-**Quick start (TypeScript):**
+**Quick start:**
 ```bash
 # Option 1: Install ts-node globally (one time)
 npm install -g ts-node
-ts-node typescript/examples/chat.ts
+ts-node examples/chat.ts
 
 # Option 2: Use local installation
 npm install -D typescript @types/node ts-node
-npx ts-node typescript/examples/chat.ts
+npx ts-node examples/chat.ts
 ```
-
-**If you get "command not found: ts-node":**
-- Install ts-node first: `npm install -g ts-node`
 
 Features:
 - Interactive question/answer loop
@@ -103,7 +66,7 @@ Features:
 - `/exit` - Exit session
 - Real-time streaming responses
 
-## API
+## API Reference
 
 ### Methods
 
@@ -147,10 +110,10 @@ Uses `q chat --no-interactive` with stdin input:
 
 Perfect for automation, CI/CD, and interactive applications.
 
-## Language Implementations
+## Requirements
 
-- [TypeScript](typescript/) - Complete implementation
-- [Python](python/) - Complete implementation
+- Node.js 14+
+- Q Developer CLI installed and accessible in PATH
 
 ## Authors
 
