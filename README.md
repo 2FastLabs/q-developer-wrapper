@@ -8,7 +8,7 @@ This library allows developers to programmatically interact with Amazon Q Develo
 
 - 🔄 **Simple API** — Clean, promise-based interface for interacting with Amazon Q Developer CLI
 - 🌊 **Streaming Output** — Real-time streaming of responses as they're generated
-- 🔤 **Dual language support** — Fully implemented in TypeScript, with Python implementation coming soon
+- 🔤 **Dual language support** — Fully implemented in TypeScript and Python
 - 🧩 **Flexible Integration** — Easy to integrate into any Node.js application or script
 - 🛠️ **Interactive CLI** — Ready-to-use interactive command-line interface included
 - 🌐 **Cross-platform** — Works on any platform where Amazon Q Developer CLI is available
@@ -21,6 +21,8 @@ This library allows developers to programmatically interact with Amazon Q Develo
 
 ## Installation
 
+### TypeScript/JavaScript
+
 ```bash
 npm install q-developer-wrapper
 ```
@@ -28,6 +30,12 @@ npm install q-developer-wrapper
 For TypeScript development, also install:
 ```bash
 npm install -D typescript @types/node ts-node
+```
+
+### Python
+
+```bash
+pip install q-developer-wrapper
 ```
 
 ## Basic Usage
@@ -133,7 +141,7 @@ interface QResponse {
 
 Uses `q chat --no-interactive` with stdin input:
 - Sends messages via stdin (like `echo "message" | q chat --no-interactive`)
-- Tools run with `--accept-all` flag when enabled
+- Tools run with `--trust-all-tools` flag when enabled
 - Real-time streaming output
 - Clean, programmatic interface
 
@@ -142,4 +150,4 @@ Perfect for automation, CI/CD, and interactive applications.
 ## Language Implementations
 
 - [TypeScript](typescript/) - Complete implementation
-- [Python](python/) - Coming soon
+- [Python](python/) - Complete implementation

@@ -36,9 +36,9 @@ class QDeveloperWrapper:
         args = [self.q_cli_path, 'chat', '--no-interactive']
 
         if request.accept_all_tools:
-            args.append('--accept-all')
+            args.append('--trust-all-tools')
 
-        print(f"Executing: {self.q_cli_path} {' '.join(args)}")
+        print(f"Executing: {' '.join(args)}")
 
         try:
             # Create the subprocess
